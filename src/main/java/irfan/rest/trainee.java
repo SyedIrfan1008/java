@@ -61,10 +61,20 @@ public class trainee {
 
 @Produces(MediaType.TEXT_HTML)
 @GET
-@Path("z/{values}")
-public String getz(@PathParam("values")String values) {
-	String[] vals=values.split(",");
+@Path("zye/{op}/{v}")
+public String varArgs(@PathParam("op")String op,@PathParam("v")String v) {
+	String[] vals=op.split(",");
+String[] v1=v.split(",");
 varArgs va=new varArgs();
-return va.add(vals)+"";
+return va.add("add",vals)+"<br>"+va.avg("avg", v1);
+}
+@Produces(MediaType.TEXT_HTML)
+@GET
+@Path("instance")
+public String instanceOf() {
+	instance<Object> i=new instance<Object>();
+	i.x=0.9f;
+	return i.getType();
+	
 }
 }
