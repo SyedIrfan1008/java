@@ -5,9 +5,9 @@
     <artifactId>rest</artifactId>
     <packaging>war</packaging>
     <version>0.0.1-SNAPSHOT</version>
-    <name>rest Jersey Webapp</name>
+    <name>irfan Jersey Webapp</name>
     <build>
-        <finalName>rest</finalName>
+        <finalName>irfan</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -40,6 +40,11 @@
                         <artifactId>javax.servlet-api</artifactId>
                         <version>3.0.1</version>
                     </dependency>
+                    <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.44</version>
+        </dependency>
                 </dependencies>
             </plugin>
         </plugins>

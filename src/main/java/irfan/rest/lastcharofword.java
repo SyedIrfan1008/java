@@ -11,14 +11,11 @@ public class lastcharofword {
 	@GET
 	@Path("last/{char}")
 	public String getlastchar(@PathParam("char")String s) {
-		 s = s ;
-		 for (int i = 1; i < s.length(); i++) {
-			 if (s.charAt(i) == ' ')
-			String s1+=s.charAt(i+1).toUpperCase();
-			 
-			 return s;
-	
+		String ar[]=s.split(" ");
+		String res="";
+		for (String b:ar)
+			res+=b.charAt(b.length()-1);
+		return res;
 
 }
 	}
-}
