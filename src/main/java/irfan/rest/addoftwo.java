@@ -9,7 +9,7 @@ import javax.ws.rs.Produces;
 public class addoftwo {
 	@GET
 	@Produces("text/plain")
-	@Path("/add/{a}/{b}")
+	@Path("add/{a}/{b}")
 	public String add(@PathParam("a")int x,@PathParam("b")int y) {
 		return "add:"+(x+y);
 				

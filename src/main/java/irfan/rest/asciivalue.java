@@ -15,7 +15,7 @@ public class asciivalue {
 		String s=" ";
 		for (int i=0;i<ar.length;i++) {
 		int n=(int)ar[i];
-		s+=n+"";
+		s+=n+"<br>";
 		
 	}
 return s;
